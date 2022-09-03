@@ -140,11 +140,11 @@
                     <div class="sidebar-item categories">
                         <ul>
                             <li><a href="#">Sejarah <span>(25)</span></a></li>
-                            <li><a href="#">Tugas dan Fungsi <span>(12)</span></a></li>
+                            <li><a href="{{ route('tugas-fungsi') }}">Tugas dan Fungsi <span>(12)</span></a></li>
                             <li><a href="#">Struktur Organisasi <span>(5)</span></a></li>
                             <li><a href="#">Info Pejabat <span>(22)</span></a></li>
                             <li><a href="#">Info Pegawai <span>(8)</span></a></li>
-                            <li><a href="#">Lokasi Kantor <span>(14)</span></a></li>
+                            <li><a href="{{ route('lokasi-kantor') }}">Lokasi Kantor <span>(14)</span></a></li>
                         </ul>
                     </div><!-- End sidebar categories-->
 

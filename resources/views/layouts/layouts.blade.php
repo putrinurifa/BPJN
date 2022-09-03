@@ -74,10 +74,10 @@
 
         <div class="footer-top">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Presento<span>.</span></h3>
+                        <h3>Balai Pelaksana Jalan Nasional<span>.</span></h3>
                         <p>
                             Kantor P2JN KENDARI
                             Jl. H. Latama Bunggulawa No.11, Punggolaka, Kec. Puuwatu, Kota Kendari, Sulawesi Tenggara
@@ -96,14 +96,14 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-8 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Social Media</h4>
                         <div class="social-links text-center text-md-end pt-3 pt-md-0">
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <a href="https://twitter.com/pupr_binamarga?lang=id" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://id-id.facebook.com/puprbinamarga" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/pupr_binamarga/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCANc-9SxyY4muVUyOmThh1Q/videos" class="youtube"><i class="bx bxl-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@pupr_binamarga" class="tiktok"><i class="bx bxl-tiktok"></i></a>
                         </div>
                     </div>
 
@@ -113,9 +113,9 @@
 
         <div class="container d-md-flex py-4">
 
-            <div class="me-md-auto text-center text-md-start">
-                <div class="copyright">
-                    &copy; Copyright 2022 Direktorat Jenderal Bina Marga Kementerian Pekerjaan Umum dan Perumahan Rakyat
+            <div class="me-md-auto text-center text-md-start ">
+                <div class="copyright ">
+                    &copy;Copyright 2022 Balai Pelaksana Jalan Nasional
                 </div>
             </div>
         </div>
