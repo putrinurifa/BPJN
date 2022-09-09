@@ -29,14 +29,6 @@
                     </div>
 
                     <div class="entry-content">
-                        <p>
-                            Balai Besar Pelaksanaan Jalan Nasional DKI Jakarta - Jawa Barat merupakan unit kerja Eselon
-                            II dibawah Direktorat Jenderal Bina Marga Kementerian Pekerjaan Umum dan Perumahan Rakyat
-                            yang mempunyai cakupan wilayah penanganan di wilayah Provinsi DKI Jakarta dan Jawa Barat.
-                            Organisasi yang mempunyai tugas dan fungsi sesuai dengan Peraturan Menteri PUPR Nomor
-                            16/PRT/M/2020 tentang Organisasi dan Tata Kerja Unit Pelaksana Teknis di Kementerian
-                            Pekerjaan Umum dan Perumahan Rakyat sebagai berikut:
-                        </p>
 
                         <h3>TUGAS</h3>
 

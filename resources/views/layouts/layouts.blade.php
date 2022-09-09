@@ -42,8 +42,13 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
+
         <div class="container d-flex align-items-center">
-            <h1 class="logo me-auto"><a href="index.html">Balai Pelaksana Jalan Nasional<span>.</span></a></h1>
+            <a class="navbar-brand" href="{{ ('/') }}">
+                <img src="{{ asset('assets') }}/img/Logo.jpg" height="60"/> 
+            </a>
+            <h1 class="logo me-auto"><a href="{{ ('/') }}">Balai Pelaksana Jalan Nasional Sulawei
+                    Tenggara<span>.</span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
@@ -56,8 +61,8 @@
                             <li><a href="{{ route('tugas-fungsi') }}">TUGAS DAN FUNGSINYA</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#about">ORGANISASI</a></li>
-                    <li><a class="nav-link scrollto" href="#services">INFORMASI PUBLIK</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('organisasi') }}">ORGANISASI</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('informasi-publik') }}">INFORMASI PUBLIK</a></li>
                     <li><a class="nav-link scrollto " href="#portfolio">PRODUK</a></li>
                     <li><a class="nav-link scrollto" href="#team">DOKUMEN</a></li>
                     <li><a class="nav-link scrollto" href="{{ route('kontak') }}">KONTAK</a></li>
@@ -75,7 +80,6 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row justify-content-center">
-
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>Balai Pelaksana Jalan Nasional<span>.</span></h3>
                         <p>
@@ -99,11 +103,16 @@
                     <div class="col-lg-3 col-md-6 footer-newsletter">
                         <h4>Social Media</h4>
                         <div class="social-links text-center text-md-end pt-3 pt-md-0">
-                            <a href="https://twitter.com/pupr_binamarga?lang=id" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="https://id-id.facebook.com/puprbinamarga" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="https://www.instagram.com/pupr_binamarga/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="https://www.youtube.com/channel/UCANc-9SxyY4muVUyOmThh1Q/videos" class="youtube"><i class="bx bxl-youtube"></i></a>
-                            <a href="https://www.tiktok.com/@pupr_binamarga" class="tiktok"><i class="bx bxl-tiktok"></i></a>
+                            <a href="https://twitter.com/pupr_binamarga?lang=id" class="twitter"><i
+                                    class="bx bxl-twitter"></i></a>
+                            <a href="https://id-id.facebook.com/puprbinamarga" class="facebook"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/pupr_binamarga/" class="instagram"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCANc-9SxyY4muVUyOmThh1Q/videos" class="youtube"><i
+                                    class="bx bxl-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@pupr_binamarga" class="tiktok"><i
+                                    class="bx bxl-tiktok"></i></a>
                         </div>
                     </div>
 

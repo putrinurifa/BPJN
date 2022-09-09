@@ -97,4 +97,14 @@ class BpjnController extends Controller
         return view('BPJN.tugas');
     }
 
+    public function informasi()
+    {
+        return view('BPJN.info');
+    }
+
+    public function organisasi()
+    {
+        return view('BPJN.organisasi');
+    }
+
 }

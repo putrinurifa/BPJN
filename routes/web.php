@@ -22,4 +22,6 @@ Auth::routes();
 Route::get('/lokasi-kantor', [App\Http\Controllers\BpjnController::class, 'lokasi'])->name('lokasi-kantor');
 Route::get('/kontak', [App\Http\Controllers\BpjnController::class, 'kontak'])->name('kontak');
 Route::get('/tugas-fungsi', [App\Http\Controllers\BpjnController::class, 'tugas'])->name('tugas-fungsi');
+Route::get('/organisasi', [App\Http\Controllers\BpjnController::class, 'organisasi'])->name('organisasi');
+Route::get('/informasi-publik', [App\Http\Controllers\BpjnController::class, 'informasi'])->name('informasi-publik');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
