@@ -45,10 +45,11 @@
 
         <div class="container d-flex align-items-center">
             <a class="navbar-brand" href="{{ ('/') }}">
-                <img src="{{ asset('assets') }}/img/Logo.jpg" height="60"/> 
+                <img src="{{ asset('assets') }}/img/Logo.jpg" height="70"/> 
             </a>
-            <h1 class="logo me-auto"><a href="{{ ('/') }}">Balai Pelaksana Jalan Nasional Sulawei
-                    Tenggara<span>.</span></a></h1>
+            <h1 class="logo me-auto"><a href="{{ ('/') }}">&emsp;Balai Pelaksana Jalan 
+                <p>&emsp;Nasional Sulawei
+                    Tenggara</p></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
