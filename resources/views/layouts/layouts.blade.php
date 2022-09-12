@@ -48,8 +48,8 @@
                 <img src="{{ asset('assets') }}/img/Logo.jpg" height="70" />
             </a>
             <h1 class="logo me-auto"><a href="{{ ('/') }}">&emsp;Balai Pelaksana Jalan
-                    <p>&emsp;Nasional Sulawei
-                        Tenggara</p>
+                    <p>&emsp;Nasional Sulawesi<br>
+                    &emsp;Tenggara</p>
                 </a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
