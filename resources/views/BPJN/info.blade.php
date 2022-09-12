@@ -13,10 +13,10 @@
             <p>Peta Kondisi Jalan Nasional</p>
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <div class="row justify-content-center" data-aos="fade-up">
 
-            <div class="col-lg-6 ">
-                <img src="{{ asset('assets') }}/img/jalan1.png" height="90%" />
+            <div class="me-md-auto text-center text-md-start ">
+                <img src="{{ asset('assets') }}/img/peta1.png" height="100%" width="100%"/>
             </div>
         </div>
 
