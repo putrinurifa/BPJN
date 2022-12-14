@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BpjnController;
+use App\Http\Controllers\KematianController;
+use App\Http\Controllers\KelahiranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +27,5 @@ Route::get('/tugas-fungsi', [App\Http\Controllers\BpjnController::class, 'tugas'
 Route::get('/organisasi', [App\Http\Controllers\BpjnController::class, 'organisasi'])->name('organisasi');
 Route::get('/informasi-publik', [App\Http\Controllers\BpjnController::class, 'informasi'])->name('informasi-publik');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/kematian', [App\Http\Controllers\KematianController::class, 'index'])->name('kematian');
+Route::get('/kelahiran', [App\Http\Controllers\KelahiranController::class, 'index'])->name('kelahiran');

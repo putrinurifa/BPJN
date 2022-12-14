@@ -49,7 +49,7 @@
             </a>
             <h1 class="logo me-auto"><a href="{{ ('/') }}">&emsp;Balai Desa Genitri Kedungrejo
                     <p>&emsp;Kecamatan Pakis<br>
-                    &emsp;Kabupaten Malang</p>
+                        &emsp;Kabupaten Malang</p>
                 </a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
@@ -64,9 +64,15 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="{{ route('organisasi') }}">ORGANISASI</a></li>
-                    <li><a class="nav-link scrollto " href="#portfolio">PRODUK</a></li>
+                    <li class="dropdown"><a href="#"><span>LAYANAN PUBLIK</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="{{ route('kelahiran') }}">SURAT KELAHIRAN</a></li>
+                            <li><a href="{{ route('kematian') }}">SURAT KEMATIAN</a></li>
+                        </ul>
+                    </li>
                     <li><a class="nav-link scrollto" href="#team">DOKUMEN</a></li>
                     <li><a class="nav-link scrollto" href="{{ route('kontak') }}">KONTAK</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('login') }}">LOGIN</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -144,10 +150,10 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <style type="text/css">
     .navbar-inverse {
-    background-color: #3b5998;
-    font-size:18px;
+        background-color: #3b5998;
+        font-size: 18px;
     }
-</style>
+    </style>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
