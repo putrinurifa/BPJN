@@ -7,8 +7,8 @@
       <div class="row">
         <div class="col-xl-6">
           <h1>Selamat Datang di</h1>
-          <h2>BALAI PELAKSANA JALAN NASIONAL </h2>
-          <h2>SULAWESI TENGGARA</h2>
+          <h2>DESA GENITRI KEDUNGREJO </h2>
+          <h2>KABUPATEN MALANG</h2>
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
         </div>
       </div>

@@ -11,7 +11,7 @@
             <div class="col-lg-8 entries">
 
                 <article class="entry entry-single">
-                    <div class="comment-img"><img src="assets/img/blog/jembatan.jpg" alt=""></div><br>
+                    <div class="comment-img"><img src="assets/img/blog/sawah.jpg" alt="" width="800" ></div><br>
 
                     <h2 class="entry-title">
                         <a href="{{ route('tugas-fungsi') }}">TUGAS DAN FUNGSI</a>

@@ -19,14 +19,14 @@
                 <div class="info-box">
                   <i class="bx bi-instagram"></i>
                   <h3>Instagram</h3>
-                  <p>@pupr_jalan_sultra</p>
+                  <p>@desa_genitri</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Email</h3>
-                  <p>bpjnhumas@gmail.com</p>
+                  <p>desagenitri@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">

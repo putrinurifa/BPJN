@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>BPJN Sulawesi Tenggara</title>
+    <title>DESA GENITRI KEDUNGREJO</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/Logo.jpg" rel="icon">
+    <link href="assets/img/Logo-genitri.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -45,11 +45,11 @@
 
         <div class="container d-flex align-items-center">
             <a class="navbar-brand" href="{{ ('/') }}">
-                <img src="{{ asset('assets') }}/img/Logo.jpg" height="70" />
+                <img src="{{ asset('assets') }}/img/logo-genitri.png" height="70" />
             </a>
-            <h1 class="logo me-auto"><a href="{{ ('/') }}">&emsp;Balai Pelaksana Jalan
-                    <p>&emsp;Nasional Sulawesi<br>
-                    &emsp;Tenggara</p>
+            <h1 class="logo me-auto"><a href="{{ ('/') }}">&emsp;Balai Desa Genitri Kedungrejo
+                    <p>&emsp;Kecamatan Pakis<br>
+                    &emsp;Kabupaten Malang</p>
                 </a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
@@ -64,7 +64,6 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="{{ route('organisasi') }}">ORGANISASI</a></li>
-                    <li><a class="nav-link scrollto" href="{{ route('informasi-publik') }}">INFORMASI PUBLIK</a></li>
                     <li><a class="nav-link scrollto " href="#portfolio">PRODUK</a></li>
                     <li><a class="nav-link scrollto" href="#team">DOKUMEN</a></li>
                     <li><a class="nav-link scrollto" href="{{ route('kontak') }}">KONTAK</a></li>
