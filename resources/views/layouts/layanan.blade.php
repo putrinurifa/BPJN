@@ -45,13 +45,13 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
 
-        <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-left">
             <a class="navbar-brand" href="{{ ('/') }}">
                 <img src="{{ asset('assets') }}/img/logo-genitri.png" height="70" />
             </a>
-            <h1 class="logo me-auto"><a href="{{ ('/') }}">&emsp;Balai Desa Genitri Kedungrejo
-                    <p>&emsp;Kecamatan Pakis<br>
-                        &emsp;Kabupaten Malang</p>
+            <h1 class="logo me-auto"><a href="{{ ('/') }}">&emsp;Balai Desa  
+                    <p>&emsp;Genitri Kedungrejo<br>
+                        &emsp;Kecamatan Pakis<br> &emsp;Kabupaten Malang</p>
                 </a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
