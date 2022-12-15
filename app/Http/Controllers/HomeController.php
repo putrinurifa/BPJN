@@ -30,7 +30,7 @@ class HomeController extends Controller
         // else{
         //     return view('');
         // }
-        return view('home');
+        return view('BPJN.index');
         
     }
 }

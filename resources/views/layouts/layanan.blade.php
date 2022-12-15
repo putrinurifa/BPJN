@@ -74,7 +74,7 @@
                     </li>
                     <li><a class="nav-link scrollto" href="#team">DOKUMEN</a></li>
                     <li><a class="nav-link scrollto" href="{{ route('kontak') }}">KONTAK</a></li>
-                    <li><a class="nav-link scrollto" href="{{ route('login') }}">LOGIN</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('login') }}">LOGOUT</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
