@@ -29,3 +29,4 @@ Route::get('/informasi-publik', [App\Http\Controllers\BpjnController::class, 'in
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/kematian', [App\Http\Controllers\KematianController::class, 'index'])->name('kematian');
 Route::get('/kelahiran', [App\Http\Controllers\KelahiranController::class, 'index'])->name('kelahiran');
+
