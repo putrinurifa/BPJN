@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\kematian;
+use Illuminate\Support\Facades\Response;
+use PDF;
 
 class KematianController extends Controller
 {
@@ -13,7 +16,10 @@ class KematianController extends Controller
      */
     public function index()
     {
-        return view('BPJN.kematian');
+        $users = auth()->user();
+        $mati = kematian::all();
+        $lahir_count = kematian::all()->count();
+        return view('BPJN.kematian', compact ('users', 'mati', 'lahir_count'));
     }
 
     /**
@@ -23,7 +29,9 @@ class KematianController extends Controller
      */
     public function create()
     {
-        //
+        $users = auth()->user();
+        $mati = kematian::all();
+        return view('BPJN.kematian', compact ('users', 'mati'));
     }
 
     /**
@@ -34,7 +42,24 @@ class KematianController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $mati = new kematian;
+        $mati->id= $request->id;
+        $mati->nama = $request->nama;
+        $mati->nik = $request->nik;
+        $mati->jk = $request->jk;
+        $mati->tempat_tgl_lahir = $request->tempat_tgl_lahir;
+        $mati->agama = $request->agama;
+        $mati->hari = $request->hari;
+        $mati->tgl = $request->tgl;
+        $mati->bertempat = $request->bertempat;
+        $mati->penyebab = $request->penyebab;
+        $mati->nama_pelapor = $request->nama_pelapor;
+        $mati->nik_pelapor = $request->nik_pelapor;
+        $mati->hari = $request->hari;
+        $mati->tempat_tgl_lahir_pelapor = $request->tempat_tgl_lahir_pelapor;
+        $mati->pekerjaan = $request->pekerjaan;
+        $mati->save();
+        return redirect()->back();
     }
 
     /**
@@ -56,7 +81,9 @@ class KematianController extends Controller
      */
     public function edit($id)
     {
-        //
+        $users = auth()->user();
+        $mati = kematian::all();
+        return redirect()->back();
     }
 
     /**
@@ -68,7 +95,25 @@ class KematianController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $mati = kematian::where('id', $id)->first();
+        $mati->id= $request->id;
+        $mati->nama = $request->nama;
+        $mati->nik = $request->nik;
+        $mati->jk = $request->jk;
+        $mati->tempat_tgl_lahir = $request->tempat_tgl_lahir;
+        $mati->agama = $request->agama;
+        $mati->hari = $request->hari;
+        $mati->tgl = $request->tgl;
+        $mati->bertempat = $request->bertempat;
+        $mati->penyebab = $request->penyebab;
+        $mati->nama_pelapor = $request->nama_pelapor;
+        $mati->nik_pelapor = $request->nik_pelapor;
+        $mati->hari = $request->hari;
+        $mati->tempat_tgl_lahir_pelapor = $request->tempat_tgl_lahir_pelapor;
+        $mati->pekerjaan = $request->pekerjaan;
+
+        $mati->save();
+        return redirect()->back();
     }
 
     /**
@@ -79,6 +124,8 @@ class KematianController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete = kematian::where('id', $id)->first();
+        $delete->save();
+        return redirect()->back();
     }
 }

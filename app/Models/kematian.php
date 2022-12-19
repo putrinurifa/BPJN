@@ -10,6 +10,7 @@ class kematian extends Model
     use HasFactory;
 
     public $table = 'kematian';
+    public $timestamps = false;
     protected $fillable = [
         'id',
         'nama',

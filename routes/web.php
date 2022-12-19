@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('BPJN.index');
 });
 
+
+Route::resource('kelahiran',KelahiranController::class);
+Route::resource('kematian',KematianController::class);
+
 Auth::routes();
 Route::get('/lokasi-kantor', [App\Http\Controllers\BpjnController::class, 'lokasi'])->name('lokasi-kantor');
 Route::get('/kontak', [App\Http\Controllers\BpjnController::class, 'kontak'])->name('kontak');
@@ -29,4 +33,6 @@ Route::get('/informasi-publik', [App\Http\Controllers\BpjnController::class, 'in
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/kematian', [App\Http\Controllers\KematianController::class, 'index'])->name('kematian');
 Route::get('/kelahiran', [App\Http\Controllers\KelahiranController::class, 'index'])->name('kelahiran');
+Route::post('/kelahiran/data', [App\Http\Controllers\KelahiranController::class, 'store'])->name('kelahiran.store');
+Route::post('/kematian/data', [App\Http\Controllers\KematianController::class, 'store'])->name('kematian.store');
 

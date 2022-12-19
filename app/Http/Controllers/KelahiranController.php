@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\kelahiaran;
+use App\Models\kelahiran;
 use Illuminate\Support\Facades\Response;
 use PDF;
 
@@ -18,7 +18,8 @@ class KelahiranController extends Controller
     {
         $users = auth()->user();
         $lahir = kelahiran::all();
-        return view('BPJN.kelahiran', compact ('users', 'lahir'));
+        $lahir_count = kelahiran::all()->count();
+        return view('BPJN.kelahiran', compact ('users', 'lahir', 'lahir_count'));
     }
 
     /**

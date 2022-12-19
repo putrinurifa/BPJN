@@ -7,20 +7,18 @@
 <!------ Include the above in your HEAD tag ---------->
 <br><br><br><br><br><br><br><br>
 <div class="container">
-    <div id="signupbox" style="margin-top:50px"
-        class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-info">
             <div class="panel-heading">
                 <div class="panel-title">Formulir Surat Kelahiran</div>
             </div>
             <div class="panel-body">
-                <form id="signupform" class="form-horizontal" role="form">
-
+                <form action="{{ route('kelahiran.store') }}" method="POST" enctype="multipart/form-data" id="signupform" class="form-horizontal" role="form">
+                @csrf
                     <div id="signupalert" style="display:none" class="alert alert-danger">
                         <p>Error:</p>
                         <span></span>
                     </div>
-
 
 
                     <div class="form-group">
@@ -49,8 +47,6 @@
                         </div>
                     </div>
 
-                    
-                    <div class="border mt-3 border-dashed"></div><br>
 
                     <div class="form-group">
                         <label for="nama_ayah" class="col-md-3 control-label">Nama Ayah</label>
@@ -74,10 +70,7 @@
                     <div style="float:right" class="form-group">
                         <!-- Button -->
 
-                        <div class="col-sm-12 controls">
-                            <a id="btn-fblogin" href="#" class="btn btn-primary">Kirim</a>
-
-                        </div>
+                        <button type="submit" class="btn btn-primary" id="btn-fblogin">Kirim </button>
                     </div>
                 </form>
             </div>

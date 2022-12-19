@@ -10,6 +10,7 @@ class kelahiran extends Model
     use HasFactory;
 
     public $table = 'kelahiran';
+    public $timestamps = false;
     protected $fillable = [
         'id_kelahiran',
         'nama_anak',
