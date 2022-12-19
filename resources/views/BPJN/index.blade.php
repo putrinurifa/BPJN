@@ -1,4 +1,4 @@
-@extends('layouts.layouts')
+@extends('layouts.layanan')
 
 @section('content')
 <section id="hero" class="d-flex align-items-center">

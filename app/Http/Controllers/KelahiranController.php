@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\kelahiaran;
+use Illuminate\Support\Facades\Response;
+use PDF;
 
 class KelahiranController extends Controller
 {
@@ -13,7 +16,9 @@ class KelahiranController extends Controller
      */
     public function index()
     {
-        return view('BPJN.kelahiran');
+        $users = auth()->user();
+        $lahir = kelahiran::all();
+        return view('BPJN.kelahiran', compact ('users', 'lahir'));
     }
 
     /**
@@ -23,7 +28,9 @@ class KelahiranController extends Controller
      */
     public function create()
     {
-        //
+        $users = auth()->user();
+        $lahir = kelahiran::all();
+        return view('BPJN.kelahiran', compact ('users', 'lahir'));
     }
 
     /**
@@ -34,7 +41,18 @@ class KelahiranController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $lahir = new kelahiran;
+        $lahir->id_kelahiran = $request->id_kelahiran;
+        $lahir->nama_anak = $request->nama_anak;
+        $lahir->tgl_lhr = $request->tgl_lhr;
+        $lahir->jk = $request->jk;
+        $lahir->alamat = $request->alamat;
+        $lahir->nama_ayah = $request->nama_ayah;
+        $lahir->nama_ibu = $request->nama_ibu;
+        $lahir->anakke = $request->anakke;
+        
+        $lahir->save();
+        return redirect()->back();
     }
 
     /**
@@ -45,7 +63,7 @@ class KelahiranController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
@@ -56,7 +74,9 @@ class KelahiranController extends Controller
      */
     public function edit($id)
     {
-        //
+        $users = auth()->user();
+        $lahir = kelahiran::all();
+        return redirect()->back();
     }
 
     /**
@@ -66,9 +86,20 @@ class KelahiranController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id_kelahiran)
     {
-        //
+        $lahir = kelahiran::where('id_kelahiran', $id_realisasi)->first();
+        $lahir->id_kelahiran = $request->id_kelahiran;
+        $lahir->nama_anak = $request->nama_anak;
+        $lahir->tgl_lhr = $request->tgl_lhr;
+        $lahir->jk = $request->jk;
+        $lahir->alamat = $request->alamat;
+        $lahir->nama_ayah = $request->nama_ayah;
+        $lahir->nama_ibu = $request->nama_ibu;
+        $lahir->anakke = $request->anakke;
+        
+        $lahir->save();
+        return redirect()->back();
     }
 
     /**
@@ -79,6 +110,22 @@ class KelahiranController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete = kelahiran::where('id_kelahiran', $id_realisasi)->first();
+        $delete->save();
+        return redirect()->back();
+    }
+
+    
+    //Download File
+    public function download($file_name)
+    {
+        $file = $file_name;
+        $path = public_path('File/RKAP/'. $file_name);
+        $headers = array(
+            'Content-Type: application/pdf',
+        );
+
+        return Response::download($path, $file, $headers);
+        
     }
 }
