@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-
+use App\Models\User;
 class HomeController extends Controller
 {
     /**
@@ -24,8 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $users = auth()->user();
          if(Auth::User()->status == 'administrator'){
-             return view('BPJN.index');
+             return view('BPJN.admin');
          }
          else{
              return view('BPJN.user');
