@@ -24,12 +24,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // if(Auth::User()->status == 'administrator'){
-        //     return view('');
-        // }
-        // else{
-        //     return view('');
-        // }
+         if(Auth::User()->status == 'administrator'){
+             return view('BPJN.index');
+         }
+         else{
+             return view('BPJN.user');
+         }
         return view('BPJN.index');
         
     }

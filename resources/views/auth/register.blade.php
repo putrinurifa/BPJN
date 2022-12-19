@@ -60,11 +60,13 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group"  style="float:right;" >
                                     <!-- Button -->                                        
-                                    <div class="col-md-offset-3 col-md-9" >
-                                <button type="submit" class="btn btn-primary" style="float:right;">
+                                    <div class="col-sm-12 controls" >
+                                <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
+                                </button>
+                                <button type="button" onclick="history.back(-1)" class="btn btn-secondary" id="btn-close" >Back
                                 </button>
                             </div>
                         </div>

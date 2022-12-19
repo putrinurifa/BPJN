@@ -46,6 +46,8 @@
                             <div class="col-sm-12 controls">
                                 <button type="submit" class="btn btn-primary" id="btn-login" >
                                     {{ __('Login') }}
+                                </button>                                
+                                <button type="button" onclick="history.back(-1)" class="btn btn-secondary" id="btn-close" >Back
                                 </button>
                                 </div>
                             </div>
