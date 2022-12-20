@@ -128,4 +128,11 @@ class KematianController extends Controller
         $delete->save();
         return redirect()->back();
     }
+
+    public function dokumen()
+    {
+        $users = auth()->user();
+        $mati = kematian::all();
+        return view('BPJN.dokumen', compact ('users', 'mati'));
+    }
 }

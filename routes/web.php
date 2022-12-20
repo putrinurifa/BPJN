@@ -32,6 +32,7 @@ Route::get('/organisasi', [App\Http\Controllers\BpjnController::class, 'organisa
 Route::get('/informasi-publik', [App\Http\Controllers\BpjnController::class, 'informasi'])->name('informasi-publik');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/kematian', [App\Http\Controllers\KematianController::class, 'index'])->name('kematian');
+Route::get('/dokumen', [App\Http\Controllers\KematianController::class, 'dokumen'])->name('dokumen');
 Route::get('/kelahiran', [App\Http\Controllers\KelahiranController::class, 'index'])->name('kelahiran');
 Route::post('/kelahiran/data', [App\Http\Controllers\KelahiranController::class, 'store'])->name('kelahiran.store');
 Route::post('/kematian/data', [App\Http\Controllers\KematianController::class, 'store'])->name('kematian.store');
