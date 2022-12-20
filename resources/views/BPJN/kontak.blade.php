@@ -10,7 +10,6 @@
           
           <p>Silahkan Hubungi Kontak Yang Tertera Jika Anda Mengalami Kendala</p>
           <div>
-          <a href="{{ route('print') }}" class="btn btn-primary" target="_blank">CETAK PDF</a>
 </div>
         </div>
 

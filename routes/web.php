@@ -39,5 +39,6 @@ Route::get('/kelahiran', [App\Http\Controllers\KelahiranController::class, 'inde
 Route::post('/kelahiran/data', [App\Http\Controllers\KelahiranController::class, 'store'])->name('kelahiran.store');
 Route::post('/kematian/data', [App\Http\Controllers\KematianController::class, 'store'])->name('kematian.store');
 Route::get('/print-born', [App\Http\Controllers\KelahiranController::class, 'print'])->name('print');
+// Route::get('/print-born', [App\Http\Controllers\KematianController::class, 'print'])->name('print');
 
 

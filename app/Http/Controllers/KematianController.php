@@ -135,4 +135,11 @@ class KematianController extends Controller
         $mati = kematian::all();
         return view('BPJN.dokumen', compact ('users', 'mati'));
     }
+    
+    public function print()
+    {
+        $lahir = kelahiran::all();
+        $pdf = PDF::loadview('BPJN.print_born', compact('lahir'));
+        return $pdf->stream();
+    }
 }
