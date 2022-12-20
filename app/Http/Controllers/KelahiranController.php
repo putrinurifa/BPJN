@@ -124,4 +124,10 @@ class KelahiranController extends Controller
         $pdf = PDF::loadview('BPJN.print_born', compact('lahir'));
         return $pdf->stream();
     }
+    public function dokumen()
+    {
+        $users = auth()->user();
+        $lahir = kelahiran::all();
+        return view('BPJN.dokumen', compact ('users', 'lahir'));
+    }
 }

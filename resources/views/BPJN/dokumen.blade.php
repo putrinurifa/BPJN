@@ -2,36 +2,26 @@
 @extends('layouts.layanan')
 
 @section('content')
-<table >
-  <thead>
-    <tr>
-      <th >Class</th>
-      <th >Heading</th>
-      <th >Heading</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th >Default</th>
-      <td>Cell</td>
-      <td>Cell</td>
-    </tr>
-
-    <tr >
-      <th >Primary</th>
-      <td>Cell</td>
-      <td>Cell</td>
-    </tr>
-    <tr >
-      <th ></th>
-      <td>Cell</td>
-      <td>Cell</td>
-    </tr>
-    <tr>
-      <th>Success</th>
-      <td>Cell</td>
-      <td>Cell</td>
-    </tr>
-  </tbody>
+<br><br><br><br><br><br><br><br>
+<h2><center> PERMINTAAN SURAT</h2><br>
+<div class = "container">
+<table class="table table-sm" border="1">
+<?php $no = 0;?>     
+@foreach($lahir as $lahir)
+<tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Action</th>
+        </tr>
+    
+        <tr>
+        <?php $no++ ;?>
+                                    <td>{{ $no }}</td>
+            <td>{{$lahir->nama_anak}}</td>
+            <td> <a href="{{ route('print') }}" class="btn btn-sm btn-primary" target="_blank">CETAK PDF</a></td>
+        </tr>
+        @endforeach
 </table>
+</div>
+<br><br><br>
 @endsection
