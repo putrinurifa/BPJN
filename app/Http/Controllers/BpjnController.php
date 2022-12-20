@@ -86,15 +86,27 @@ class BpjnController extends Controller
     {
         return view('BPJN.lokasi');
     }
+    public function lokasi2()
+    {
+        return view('BPJN.lokasi_2');
+    }
 
     public function kontak()
     {
         return view('BPJN.kontak');
     }
+    public function kontak2()
+    {
+        return view('BPJN.kontak_2');
+    }
 
     public function tugas()
     {
         return view('BPJN.tugas');
+    }
+    public function tugas2()
+    {
+        return view('BPJN.tugas_2');
     }
 
     public function informasi()
@@ -105,6 +117,10 @@ class BpjnController extends Controller
     public function organisasi()
     {
         return view('BPJN.organisasi');
+    }
+    public function organisasi2()
+    {
+        return view('BPJN.organisasi_2');
     }
 
 }

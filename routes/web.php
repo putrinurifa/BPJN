@@ -28,9 +28,13 @@ Route::resource('kematian',KematianController::class);
 
 Auth::routes();
 Route::get('/lokasi-kantor', [App\Http\Controllers\BpjnController::class, 'lokasi'])->name('lokasi-kantor');
+Route::get('/lokasi-kantor2', [App\Http\Controllers\BpjnController::class, 'lokasi2'])->name('lokasi-kantor2');
 Route::get('/kontak', [App\Http\Controllers\BpjnController::class, 'kontak'])->name('kontak');
+Route::get('/kontak2', [App\Http\Controllers\BpjnController::class, 'kontak2'])->name('kontak2');
 Route::get('/tugas-fungsi', [App\Http\Controllers\BpjnController::class, 'tugas'])->name('tugas-fungsi');
+Route::get('/tugas-fungsi2', [App\Http\Controllers\BpjnController::class, 'tugas2'])->name('tugas-fungsi2');
 Route::get('/organisasi', [App\Http\Controllers\BpjnController::class, 'organisasi'])->name('organisasi');
+Route::get('/organisasi2', [App\Http\Controllers\BpjnController::class, 'organisasi2'])->name('organisasi2');
 Route::get('/informasi-publik', [App\Http\Controllers\BpjnController::class, 'informasi'])->name('informasi-publik');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/kematian', [App\Http\Controllers\KematianController::class, 'index'])->name('kematian');

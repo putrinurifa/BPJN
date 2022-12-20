@@ -5,6 +5,7 @@
 <br><br><br><br><br><br><br><br>
 <h2><center> PERMINTAAN SURAT</h2><br>
 <div class = "container">
+  <h4>Surat Kelahiran</h4>
 <table class="table table-sm" border="1">
 <?php $no = 0;?>     
 @foreach($lahir as $lahir)
@@ -23,5 +24,6 @@
         @endforeach
 </table>
 </div>
+
 <br><br><br>
 @endsection

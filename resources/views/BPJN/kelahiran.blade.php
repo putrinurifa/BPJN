@@ -22,26 +22,26 @@
 
 
                     <div class="form-group">
-                        <label for="nama_anak" class="col-md-3 control-label">Nama Anak</label>
+                        <label for="nama_anak" class="col-md-3 control-label" style="text-align:left;">Nama Anak</label>
                         <div class="col-md-9">
                             <input type="text" class="form-control" name="nama_anak" placeholder="Nama">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="tgl_lhr" class="col-md-3 control-label">Tempat/Tanggal Lahir</label>
+                        <label for="tgl_lhr" class="col-md-3 control-label" style="text-align:left;">Tempat/Tanggal Lahir</label>
                         <div class="col-md-9">
                             <input type="text" class="form-control" name="tgl_lhr" placeholder="Tempat/Tanggal Lahir">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="jk" class="col-md-3 control-label">Jenis Kelamin</label>
+                        <label for="jk" class="col-md-3 control-label" style="text-align:left;">Jenis Kelamin</label>
                         <div class="col-md-9">
                             <input type="text" class="form-control" name="jk" placeholder="Jenis Kelamin">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="alamat" class="col-md-3 control-label">Alamat</label>
+                        <label for="alamat" class="col-md-3 control-label" style="text-align:left;">Alamat</label>
                         <div class="col-md-9">
                             <input type="alamat" class="form-control" name="alamat" placeholder="Alamat">
                         </div>
@@ -49,19 +49,19 @@
 
 
                     <div class="form-group">
-                        <label for="nama_ayah" class="col-md-3 control-label">Nama Ayah</label>
+                        <label for="nama_ayah" class="col-md-3 control-label" style="text-align:left;">Nama Ayah</label>
                         <div class="col-md-9">
                             <input type="nama_ayah" class="form-control" name="nama_ayah" placeholder="Nama Ayah">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="nama_ibu" class="col-md-3 control-label">Nama Ibu</label>
+                        <label for="nama_ibu" class="col-md-3 control-label" style="text-align:left;">Nama Ibu</label>
                         <div class="col-md-9">
                             <input type="nama_ibu" class="form-control" name="nama_ibu" placeholder="Nama Ibu">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="anakke" class="col-md-3 control-label">Anak Ke</label>
+                        <label for="anakke" class="col-md-3 control-label" style="text-align:left;">Anak Ke</label>
                         <div class="col-md-9">
                             <input type="anakke" class="form-control" name="anakke" placeholder="Anak Ke">
                         </div>
@@ -69,8 +69,9 @@
 
                     <div style="float:right" class="form-group">
                         <!-- Button -->
-
+                        <div class="col-md-9">
                         <button type="submit" class="btn btn-primary" id="btn-fblogin">Kirim </button>
+</div>
                     </div>
                 </form>
             </div>
