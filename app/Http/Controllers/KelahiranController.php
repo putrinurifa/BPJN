@@ -117,16 +117,11 @@ class KelahiranController extends Controller
     }
 
     
-    //Download File
-    public function download($file_name)
+    //Print File
+    public function print()
     {
-        $file = $file_name;
-        $path = public_path('File/RKAP/'. $file_name);
-        $headers = array(
-            'Content-Type: application/pdf',
-        );
-
-        return Response::download($path, $file, $headers);
-        
+        $lahir = kelahiran::all();
+        $pdf = PDF::loadview('BPJN.print_born', compact('lahir'));
+        return $pdf->stream();
     }
 }

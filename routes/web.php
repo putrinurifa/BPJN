@@ -36,4 +36,5 @@ Route::get('/dokumen', [App\Http\Controllers\KematianController::class, 'dokumen
 Route::get('/kelahiran', [App\Http\Controllers\KelahiranController::class, 'index'])->name('kelahiran');
 Route::post('/kelahiran/data', [App\Http\Controllers\KelahiranController::class, 'store'])->name('kelahiran.store');
 Route::post('/kematian/data', [App\Http\Controllers\KematianController::class, 'store'])->name('kematian.store');
+Route::get('/print-born', [App\Http\Controllers\KelahiranController::class, 'print'])->name('print');
 

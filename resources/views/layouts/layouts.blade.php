@@ -66,7 +66,7 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="{{ route('organisasi') }}">ORGANISASI</a></li>
-                    <li><a class="nav-link scrollto" href="#team">DOKUMEN</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('login') }}">DOKUMEN</a></li>
                     <li><a class="nav-link scrollto" href="{{ route('kontak') }}">KONTAK</a></li>
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
