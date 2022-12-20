@@ -7,7 +7,11 @@
 
         <div class="section-title">
           <h2>KONTAK</h2>
+          
           <p>Silahkan Hubungi Kontak Yang Tertera Jika Anda Mengalami Kendala</p>
+          <div>
+          <a href="{{ route('print') }}" class="btn btn-primary" target="_blank">CETAK PDF</a>
+</div>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
